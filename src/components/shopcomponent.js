@@ -21,4 +21,6 @@ ShopComponent.PropTypes = {
     cost: PropTypes.number.isRequired,
     rate: PropTypes.number.isRequired,
     amount: PropTypes.number.isRequired
-}
+};
+
+export default ShopComponent;
