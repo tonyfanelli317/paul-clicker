@@ -1,19 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types"
 
+const handleClick = console.log("You clicked it!!!");
+
 const Button = (props) => {
     return(<div>
-        <button class={props.class} onclick={props.onclick}>
-            <img id={props.photoID} src={props.imgSRC}/>
+        <button className={props.class} onClick={handleClick}>
+            <img id={props.photoID} alt={props.altText} src={props.imgSRC}/>
         </button>
     </div>);
 };
 
-Button.PropTypes = {
-    class: PropTypes.string.isRequired,
-    onclick: PropTypes.func.isRequired,
+Button.propTypes = {
+    class: PropTypes.string,
+    //onClick: PropTypes.func.isRequired,
     imgSRC: PropTypes.string.isRequired,
-    photoID: PropTypes.string
+    photoID: PropTypes.string,
+    altText: PropTypes.string
 }
 
 export default Button;

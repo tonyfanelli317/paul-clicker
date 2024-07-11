@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from "src/atomic/button.js";
+import Button from "/Users/joefanelli/Documents/Paul Clicker/paul-clicker/paul-clicker/src/atomic/button.js";
 
-const ShopComponent = (props) => {
+
+
+let ShopComponent = (props) => {
     return(<div>
-        <Button class={props.class} onclick={props.onclick} photoID={props.photoID} imgSRC={props.imgSRC} />
+        <Button class={props.class} onClick={props.onClick} photoID={props.photoID} imgSRC={props.imgSRC} />
         <h2>{props.itemTitle}</h2>
         <p id="costCounter">Cost: {props.cost} Pauls</p>
         <p id="rateCounter">+{props.rate} Pauls Per Second</p>
@@ -12,9 +14,9 @@ const ShopComponent = (props) => {
     </div>);
 };
 
-ShopComponent.PropTypes = {
-    class: PropTypes.string.isRequired,
-    onclick: PropTypes.func.isRequired,
+ShopComponent.propTypes = {
+    class: PropTypes.string,
+    //onClick: PropTypes.func.isRequired,
     imgSRC: PropTypes.string.isRequired,
     photoID: PropTypes.string,
     itemTitle: PropTypes.string.isRequired,

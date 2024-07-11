@@ -1,10 +1,9 @@
 import React from "react";
-
+import PaulGlasses from "/Users/joefanelli/Documents/Paul Clicker/paul-clicker/paul-clicker/src/components/shop/paulGlasses.js"
 
 const App = () => {
       return(<div>
-          <h1>Hello World!</h1>
-          <img src="/Users/joefanelli/Documents/Paul Clicker/paul-clicker/paul-clicker/public/images/PaulButton.jpg"/>
+      <PaulGlasses/>
       </div>);
   };
 
